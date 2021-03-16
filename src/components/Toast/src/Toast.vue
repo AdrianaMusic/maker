@@ -90,24 +90,24 @@ export default {
   border-radius: 8px;
 }
 
-.type_error { /* TODO: change colors for each type */
-  --color: rgba(255, 59, 48, 1);
-  --color-bg: rgba(245, 239, 239, 1);
+.type_error {
+  --color: rgba(255, 255, 255, 1);
+  --color-bg: rgba(206, 50, 23, 1);
 }
 
 .type_warning {
-  --color: rgba(255, 149, 0, 1);
-  --color-bg: rgba(245, 243, 239, 1);
+  --color: rgba(0, 0, 0, 0.9);
+  --color-bg: rgba(255, 255, 255, 1);
 }
 
 .type_success {
-  --color: rgba(52, 199, 89, 1);
-  --color-bg: rgba(239, 245, 241, 1);
+  --color: rgba(0, 0, 0, 0.9);
+  --color-bg: rgba(255, 255, 255, 1);
 }
 
 .type_info {
-  --color: hsl(0, 0%, 69%);
-  --color-bg: hsl(0, 0%, 97%);
+  --color: rgba(0, 0, 0, 0.9);
+  --color-bg: rgba(255, 255, 255, 1);
 }
 
 .variant_block {
