@@ -48,7 +48,7 @@ export default {
      */
 		type: {
 			type: String,
-			default: 'info',
+			default: 'info', // TODO: check if type:info -> generic
 			validator: (type) => ['error', 'success', 'warning', 'info'].includes(type),
 		},
     /**
@@ -80,52 +80,52 @@ export default {
 
 <style module="$s">
 .Toast {
-  --font-family: inherit;
+	--font-family: inherit;
 
-  display: flex;
-  color: var(--color);
-  font-size: 14px;
-  font-family: var(--font-family);
-  line-height: 24px;
-  border-radius: 8px;
+	display: flex;
+	color: var(--color);
+	font-size: 14px;
+	font-family: var(--font-family);
+	line-height: 24px;
+	border-radius: 8px;
 }
 
 .type_error {
-  --color: rgba(255, 255, 255, 1);
-  --color-bg: rgba(206, 50, 23, 1);
+	--color: rgba(255, 255, 255, 1);
+	--color-bg: #ce3217;
 }
 
 .type_warning {
-  --color: rgba(0, 0, 0, 0.9);
-  --color-bg: rgba(255, 255, 255, 1);
+	--color: rgba(0, 0, 0, 0.9);
+	--color-bg: rgba(255, 255, 255, 1);
 }
 
 .type_success {
-  --color: rgba(0, 0, 0, 0.9);
-  --color-bg: rgba(255, 255, 255, 1);
+	--color: rgba(0, 0, 0, 0.9);
+	--color-bg: rgba(255, 255, 255, 1);
 }
 
 .type_info {
-  --color: rgba(0, 0, 0, 0.9);
-  --color-bg: rgba(255, 255, 255, 1);
+	--color: rgba(0, 0, 0, 0.9);
+	--color-bg: rgba(255, 255, 255, 1);
 }
 
 .variant_block {
-  padding: 16px;
-  background-color: var(--color-bg);
+	padding: 16px;
+	background-color: var(--color-bg);
 }
 
 .IconAligner {
-  display: flex;
-  align-items: center;
-  height: 24px;
-  margin-right: 8px;
+	display: flex;
+	align-items: center;
+	height: 24px;
+	margin-right: 8px;
 }
 
 .Icon {
-  width: 16px;
-  height: 16px;
-  fill: currentColor;
-  stroke: white;
+	width: 16px;
+	height: 16px;
+	fill: currentColor;
+	stroke: white;
 }
 </style>
