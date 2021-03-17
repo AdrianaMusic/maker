@@ -16,7 +16,7 @@
 			/>
 		</div>
 		<div>
-			<!-- @slot notice content -->
+			<!-- @slot toast content -->
 			<slot />
 		</div>
 	</div>
@@ -64,13 +64,13 @@ export default {
 	computed: {
 		iconComponent() {
 			if (this.type === 'error') {
-				return AlertTriangle;
+				return AlertCircle;
 			}
 			if (this.type === 'success') {
 				return CheckCircle;
 			}
 			if (this.type === 'warning') {
-				return AlertCircle;
+				return AlertTriangle;
 			}
 			return Info;
 		},
@@ -125,7 +125,7 @@ export default {
 .Icon {
 	width: 16px;
 	height: 16px;
-	fill: currentColor;
+	fill: var(--color-bg);
 	stroke: white;
 }
 </style>
