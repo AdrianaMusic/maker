@@ -91,7 +91,7 @@ export default {
 }
 
 .type_error {
-	--color: rgba(255, 255, 255, 1);
+	--color: #fff;
 	--color-bg: #ce3217;
 }
 

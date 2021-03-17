@@ -9,6 +9,27 @@
     >
       This is an error toast.
     </m-toast>
+
+    <m-toast
+        type="success"
+        variant="block"
+    >
+        This is a success toast.
+    </m-toast>
+
+    <m-toast
+        type="warning"
+        variant="block"
+    >
+        This is a warning toast.
+    </m-toast>
+
+    <m-toast
+        type="info"
+        variant="block"
+    >
+        This is an info toast.
+    </m-toast>
   </div>
 </template>
 
@@ -36,9 +57,9 @@ Supports attributes from [`<div>`](https://developer.mozilla.org/en-US/docs/Web/
 
 ## Slots
 
-| Slot    | Description    |
-| ------- | -------------- |
-| default | notice content |
+| Slot    | Description   |
+| ------- | ------------- |
+| default | toast content |
 
 
 ## Events
