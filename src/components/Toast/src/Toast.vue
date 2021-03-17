@@ -83,7 +83,7 @@ export default {
 	--font-family: inherit;
 
 	display: flex;
-	color: var(--color);
+	color: var(--color-text);
 	font-size: 14px;
 	font-family: var(--font-family);
 	line-height: 24px;
@@ -91,27 +91,31 @@ export default {
 }
 
 .type_error {
-	--color: white;
+	--color-text: white;
 	--color-bg: #ce3217;
-	--icon-color: #ce3217;
+	--color-icon-fill: white;
+	--color-icon-stroke: #ce3217;
 }
 
 .type_warning {
-	--color: rgba(0, 0, 0, 0.9);
+	--color-text: rgba(0, 0, 0, 0.9);
 	--color-bg: white;
-	--icon-color: #ff7734;
+	--color-icon-fill: rgba(255, 149, 0, 1);
+	--color-icon-stroke: white;
 }
 
 .type_success {
-	--color: rgba(0, 0, 0, 0.9);
+	--color-text: rgba(0, 0, 0, 0.9);
 	--color-bg: white;
-	--icon-color: #24b324;
+	--color-icon-fill: rgba(52, 199, 89, 1);
+	--color-icon-stroke: white;
 }
 
 .type_info {
-	--color: rgba(0, 0, 0, 0.9);
+	--color-text: rgba(0, 0, 0, 0.9);
 	--color-bg: white;
-	--icon-color: #666;
+	--color-icon-fill: hsl(0, 0%, 69%);
+	--color-icon-stroke: white;
 }
 
 .variant_block {
@@ -131,7 +135,7 @@ export default {
 .Icon {
 	width: 16px;
 	height: 16px;
-	fill: var(--icon-color);
-	stroke: white;
+	fill: var(--color-icon-fill);
+	stroke: var(--color-icon-stroke);
 }
 </style>
