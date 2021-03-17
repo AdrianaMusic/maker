@@ -91,27 +91,26 @@ export default {
 }
 
 .type_error {
-	--color: #fff;
+	--color: white;
 	--color-bg: #ce3217;
-	--icon-color: #fff;
+	--icon-color: #ce3217;
 }
 
 .type_warning {
 	--color: rgba(0, 0, 0, 0.9);
-	--color-bg: #fff;
+	--color-bg: white;
 	--icon-color: #ff7734;
 }
 
 .type_success {
 	--color: rgba(0, 0, 0, 0.9);
-	--color-bg: #fff;
+	--color-bg: white;
 	--icon-color: #24b324;
-
 }
 
 .type_info {
 	--color: rgba(0, 0, 0, 0.9);
-	--color-bg: #fff;
+	--color-bg: white;
 	--icon-color: #666;
 }
 
@@ -132,7 +131,7 @@ export default {
 .Icon {
 	width: 16px;
 	height: 16px;
-	fill: var(--color-bg);
-	stroke: var(--icon-color);
+	fill: var(--icon-color);
+	stroke: white;
 }
 </style>
