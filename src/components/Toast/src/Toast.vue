@@ -93,26 +93,33 @@ export default {
 .type_error {
 	--color: #fff;
 	--color-bg: #ce3217;
+	--icon-color: #fff;
 }
 
 .type_warning {
 	--color: rgba(0, 0, 0, 0.9);
-	--color-bg: rgba(255, 255, 255, 1);
+	--color-bg: #fff;
+	--icon-color: #ff7734;
 }
 
 .type_success {
 	--color: rgba(0, 0, 0, 0.9);
-	--color-bg: rgba(255, 255, 255, 1);
+	--color-bg: #fff;
+	--icon-color: #24b324;
+
 }
 
 .type_info {
 	--color: rgba(0, 0, 0, 0.9);
-	--color-bg: rgba(255, 255, 255, 1);
+	--color-bg: #fff;
+	--icon-color: #666;
 }
 
 .variant_block {
+	margin: 16px;
 	padding: 16px;
 	background-color: var(--color-bg);
+	box-shadow: 0 5px 15px rgba(59, 59, 59, 0.05);
 }
 
 .IconAligner {
@@ -126,6 +133,6 @@ export default {
 	width: 16px;
 	height: 16px;
 	fill: var(--color-bg);
-	stroke: white;
+	stroke: var(--icon-color);
 }
 </style>
